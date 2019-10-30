@@ -63,7 +63,6 @@ def traverse(mesh):
     """Credit to the compas team hehe I didn't figure this question out"""
     boundary_vertices = mesh.vertices_on_boundaries()[0]
     start = random.choice(boundary_vertices)
-    print(start)
     nbrs = mesh.vertex_neighbors(start)
     path = []
     current = start
